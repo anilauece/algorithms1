@@ -1,0 +1,30 @@
+Two classic sorting algorithms: Merge sort and Quick sort
+Also we fully understood scientific properties of these algorithms.
+
+						Merge Sort
+Based on Idea of merging.
+
+Merge sort algorithm:
+0. Requries an auxiliary array
+1. Divide array into 2-halves
+2. Recursively sort each half
+3. Merge two halves.
+
+=> divide and conquer
+
+Note: Auxiliary array should not be created during recursive calls;
+that will badly affects performance.
+
+Note: in-place merge sort algorithm yet to be discovered.
+
+Problems  with merge-sort:
+-> Extra array needed
+-> Too much recursive overhead for tiny sub-arrays
+-> Merge operation(can it be optimized?)
+
+Improvements:
+1. Use Insertion sort for ~ 7 items(20% faster)
+2. Merge operation usage:
+   a. If array is already sorted, quit before merge
+   b. Eliminate copy to aux[] -> (Saves bit time, but extra space aux[] is still needed.)
+   
