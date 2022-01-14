@@ -1,0 +1,52 @@
+								DP
+Prerequisites:
+1. Solid understanding of Recursion
+2. Basic understanding of Greedy Algorithms
+3. Big O Notation
+4. Hash tables
+---------------------------------------------------------------------------------------------
+Q)What is Dynamic Programming?
+A)Dynamic Programming (DP) is a programming paradigm that can systematically and efficiently explore 
+all possible solutions to a problem.
+
+It is capable of solving a wide variety of problems that often have the following characteristics:
+1. The problem can be broken down into "overlapping subproblems" - 
+	smaller versions of the original problem that are re-used multiple times.
+2. The problem has an "optimal substructure" -
+	an optimal solution can be formed from optimal solutions to the
+	overlapping subproblems of the original problem.
+
+Q)How to practically spot when DP is applicable?
+---------------------------------------------------------------------------------------------
+DP Example: Fibonacci sequence
+F(n) = F(n-1) + F(n-2)
+1 1 2 3 5 8 13 21 34 55 89
+---------------------------------------------------------------------------------------------
+1. Breakdown into smaller sub-problems: Find F(n-1) and F(n-2)
+2. Optimal substructure: 
+   Can the solution to Original problem can be formed from the solutions to the subproblems?
+   Yes. Because,
+   Adding F(n-1), F(n-2) will give solution to original problem F(n)
+3. Overlapping sub-problems: Yes
+   eg: F(6) = F(5) + F(4)
+	   F(5) =        F(4) + F(3)  
+	   F(4) solution is commonly required for F(5), F(6)
+	   
+Greedy problems have optimal substructure, but not overlapping subproblems.
+Divide and conquer algorithms break a problem into subproblems, but these subproblems are not overlapping.
+(which is why DP and divide and conquer are commonly mistaken for one another).
+eg: Merge-sort is divide and conquer.
+
+DP is Powerful tool.
+Reason:
+-------
+1. It can break a complex problem into manageable subproblems
+2. avoid unnecessary recalculation of overlapping subproblems
+3. use the results of those subproblems to solve the initial complex problem.
+
+DP Better than brute-force as it greatly improves time complexity.
+eg: Fibonacci
+Solving using Brute-force: Exponential time.
+Solving using DP: linear time.
+
+There are two main methods of implementing a DP algorithm.
