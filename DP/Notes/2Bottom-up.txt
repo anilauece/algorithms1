@@ -1,0 +1,22 @@
+								  Top-down and Bottom-up
+2 Ways to implement DP:
+1. Bottom-up, also known as tabulation.
+2. Top-down, also known as memoization.
+
+Bottom-up (Tabulation):
+1. implemented with iteration 
+2. starts at the base cases.
+--------------------------------------------
+eg: Fibonacci sequence
+Base cases: F(0)=1 and F(1)=1
+a) Use base cases to calculate F(2)
+b) Use that result to calculate F(3)
+so on all the way upto F(n)
+--------------------------------------------
+// Pseudocode example for bottom-up
+
+F = array of length (n + 1)
+F[0] = 0
+F[1] = 1
+for i from 2 to n:
+    F[i] = F[i - 1] + F[i - 2]
