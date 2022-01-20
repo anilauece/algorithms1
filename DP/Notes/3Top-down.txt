@@ -1,0 +1,28 @@
+					Top-down(Recursion + Memoization)
+1. Implemented with Recursion
+2. Made efficient with memoization
+eg: Fibonacci series
+F(n) -> Find F(n-1) and F(n-2) -> Find F(n-2), F(n-3), F(n-4) ... until F(1), F(0)
+
+Problem with Recursion: Ton of Unnecessary repeated computations.
+
+Memoizing: Store the result of a function call, usually in a hashmap or an array
+- When function call is made again, we simply return memoized result instead of recalculating it.
+
+// Pseudocode example for top-down
+
+memo = hashmap
+Function F(integer i):
+    if i is 0 or 1: 
+        return i
+    if i doesn't exist in memo:
+        memo[i] = F(i - 1) + F(i - 2)
+    return memo[i]
+	
+Which is better?
+A bottom-up implementation's runtime is usually faster, as iteration does not have the 
+overhead that recursion does.
+
+A top-down implementation is usually much easier to write. 
+This is because with recursion, the ordering of subproblems does not matter, 
+whereas with tabulation, we need to go through a logical ordering of solving subproblems.
