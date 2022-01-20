@@ -35,7 +35,7 @@ F(n) = F(n-1) + F(n-2)
 Greedy problems have optimal substructure, but not overlapping subproblems.
 Divide and conquer algorithms break a problem into subproblems, but these subproblems are not overlapping.
 (which is why DP and divide and conquer are commonly mistaken for one another).
-eg: Merge-sort is divide and conquer.
+eg: Merge-sort is divide and conquer. sub-problems are non-overlapping.
 
 DP is Powerful tool.
 Reason:
