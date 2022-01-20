@@ -1,0 +1,16 @@
+			When to use DP
+How to solve an algorithm problem?
+
+Half of the battle in interview
+- Figuring out how to even approach the problem
+
+When to use DP?
+The problem can be broken down into "overlapping subproblems" 
+- smaller versions of the original problem that are re-used multiple times
+
+The problem has an "optimal substructure" 
+- an optimal solution can be formed from optimal solutions to the overlapping 
+subproblems of the original problem
+
+Note: Unfortunately, it is hard to identify when a problem fits into these definitions.
+------------------------------------------------------------------------------------------
